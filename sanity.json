@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "iokvwaxj",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "nextjs-portfolio"
+  }
+}

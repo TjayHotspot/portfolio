@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(36, 36, 36);
+  overflow-y: scroll;
+  color: white;
+}
+
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border border-transparent rounded-full uppercase text-xs tracking-widest text-gray-500 
+    transition-all hover:border-[#273487]/60 hover:text-[#2a90fd]/60 cursor-pointer;
+  }
+  .section-header-style {
+    @apply absolute top-16 uppercase tracking-[20px] text-gray-500 text-2xl z-20;
+  }
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500
+     placeholder-gray-500 transition-all focus:border-[#2a90fd]/40 focus:text-[#2a90fd]/40 hover:border-[#2a90fd]/40;
+  }
+}
+.animate-ping {
+  animation-duration: 1.8s;
+}
